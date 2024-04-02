@@ -1,19 +1,16 @@
 <script>
-  import MainHeader from './components/MainHeader.vue'
+import MainHeader from "./components/MainHeader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MainHeader,
-  }
-}
+  },
+};
 </script>
 
 <template>
-  <MainHeader></MainHeader>  
+  <MainHeader></MainHeader>
 </template>
 
-<style>
-
-
-</style>
+<style></style>
