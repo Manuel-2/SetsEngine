@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -19,5 +19,5 @@ body {
   --danger-color: #ff5964;
 
   /* sizes */
-  --header-height:50px;
+  --header-height: 50px;
 }
