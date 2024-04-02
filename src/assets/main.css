@@ -6,10 +6,18 @@
 
 body {
   min-height: 100vh;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 :root {
   /* colors */
-  --header-color: red;
+  --primary-color: #f4f4f6;
+  --secondary-color: #e6e6e9;
+  --tertiary-color: #9999a1;
+  --positive-color: #35a7ff;
+  --danger-color: #ff5964;
+
+  /* sizes */
+  --header-height:50px;
 }

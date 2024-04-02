@@ -25,10 +25,12 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  height: 50px;
+  height: var(--header-height);
+  padding: 0px 15px;
   display: flex;
   justify-content: space-between;
   background-color: var(--header-color);
+  box-shadow: 0px 5px 15px -7px rgba(0,0,0,0.1);;
 }
 
 .header__part {
