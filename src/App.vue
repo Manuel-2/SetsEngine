@@ -1,10 +1,17 @@
 <script>
 import MainHeader from "./components/MainHeader.vue";
+import MathInput from "./components/MathInput.vue";
 
 export default {
+  data(){
+    return {
+      sets:[]
+    }
+  },
   name: "App",
   components: {
     MainHeader,
+    MathInput,
   },
 };
 </script>
@@ -17,16 +24,7 @@ export default {
       <hr />
     </aside>
     <main>
-      <div class="playground__inputs">
-        <input type="text" placeholder="A&#8746;B" />
-        <div class="playground__keyboard">
-          <button class="playground__key">&#8746;</button>
-          <button class="playground__key">&#8745;</button>
-          <button class="playground__key">-</button>
-          <button class="playground__key">&#916;</button>
-          <button class="playground__key">x&#39;</button>
-        </div>
-      </div>
+      <MathInput/>
       <div class="playground__resutls"></div>
     </main>
   </div>
