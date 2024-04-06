@@ -5,7 +5,10 @@ import MathInput from "./components/MathInput.vue";
 export default {
   data(){
     return {
-      sets:[]
+      sets:{
+       A:[1,2,4],
+       B:[4,5,6]
+      }
     }
   },
   name: "App",
@@ -22,6 +25,7 @@ export default {
     <aside class="playground__info-panel">
       <h2>Sets</h2>
       <hr />
+      <p v-for="(set, index) in Object.keys(sets)" :key="index">{{set}} = {{sets[set]}}</p>
     </aside>
     <main>
       <MathInput/>
@@ -43,6 +47,11 @@ export default {
     padding: 15px 10px;
     background-color: var(--primary-color);
     border-right: 2px solid var(--secondary-color);
+
+    p {
+      font-size:1.2rem;
+      margin-top: 10px;
+    }
   }
 
   main {
@@ -51,6 +60,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+
   }
 }
 </style>

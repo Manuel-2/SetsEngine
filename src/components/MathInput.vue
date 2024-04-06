@@ -1,14 +1,23 @@
 <script>
 export default {
-  name:"MathInput" 
+  name:"MathInput" ,
+  methods: {
+    readInput(event){
+      event.preventDefault();
+      let rawInputData = new FormData(event.target);
+      console.log(rawInputData);
+    }
+  },
 }
 </script>
 
 <template>
   <div class="playground__inputs">
         <div class="playground__main-input">
-          <input type="text" placeholder="A&#8746;B" />
-          <input type="button" value="go"/>
+          <form @:submit=readInput>
+          <input type="text" name="mainInput" placeholder="A&#8746;B" />
+          <input type="submit" value="go"/>
+          </form>
         </div>
         <div class="playground__keyboard">
           <button class="playground__key">&#8746;</button>
@@ -40,11 +49,11 @@ export default {
        border-radius: 5px 0px 0px 5px;
      }
 
-     input[type='button']{
+     input[type='submit']{
       width:10%;
       height:30px;
       border-radius: 0px 5px 5px 0px;
-      border:none;
+      border: 1px solid var(--tertiary-color);
       background-color:var(--positive-color);
      }
    }
